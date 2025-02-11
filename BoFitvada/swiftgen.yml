@@ -1,0 +1,22 @@
+xcassets:
+  - inputs:
+    - BoFitvada/Resources/Images
+    outputs:
+      - templateName: swift5
+        output: BoFitvada/Resources/Images/Images.generated.swift
+  - inputs:
+    - BoFitvada/Resources/Colors/Colors.xcassets
+    outputs:
+      - templateName: swift5
+        output: BoFitvada/Resources/Colors/Colors.generated.swift
+        params:
+          enumName: Colors
+          
+fonts:
+  - inputs: BoFitvada/Resources/Fonts
+    outputs:
+    - templateName: swift5
+      output: BoFitvada/Resources/Fonts/Fonts.generated.swift
+      params:
+        enumName: Fonts
+
