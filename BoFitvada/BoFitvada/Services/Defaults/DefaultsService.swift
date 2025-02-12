@@ -46,42 +46,18 @@ extension DefaultsService {
         }
     }
     
-    var transactions: [TransactionModel] {
+    var completedWorkoutTasks: [WorkoutTask] {
         get {
-            if let data = standard.data(forKey: Keys.transactions.rawValue),
-               let items = try? JSONDecoder().decode([TransactionModel].self, from: data) {
+            if let data = standard.data(forKey: Keys.completedWorkoutTasks.rawValue),
+               let items = try? JSONDecoder().decode([WorkoutTask].self, from: data) {
                 return items
             }
             return []
         }
         set {
             if let data = try? JSONEncoder().encode(newValue) {
-                standard.set(data, forKey: Keys.transactions.rawValue)
+                standard.set(data, forKey: Keys.completedWorkoutTasks.rawValue)
             }
-        }
-    }
-    
-    var categories: [TransactionCategory] {
-        get {
-            if let data = standard.data(forKey: Keys.categories.rawValue),
-               let items = try? JSONDecoder().decode([TransactionCategory].self, from: data) {
-                return items
-            }
-            return []
-        }
-        set {
-            if let data = try? JSONEncoder().encode(newValue) {
-                standard.set(data, forKey: Keys.categories.rawValue)
-            }
-        }
-    }
-    
-    var neededIncomePercentage: Int {
-        get {
-            standard.integer(forKey: Keys.neededIncomePercentage.rawValue)
-        }
-        set {
-            standard.set(newValue, forKey: Keys.neededIncomePercentage.rawValue)
         }
     }
 }
@@ -91,8 +67,6 @@ extension DefaultsService {
     enum Keys: String {
         case flow
         case user
-        case transactions
-        case categories
-        case neededIncomePercentage
+        case completedWorkoutTasks
     }
 }

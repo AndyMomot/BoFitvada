@@ -14,6 +14,9 @@
 		47C368C22D5BE13800C449A4 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C368BE2D5BE13800C449A4 /* SettingsViewModel.swift */; };
 		47C368CA2D5BEB0100C449A4 /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C368C82D5BEB0100C449A4 /* SettingsButton.swift */; };
 		47C368D32D5BEE8F00C449A4 /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C368D02D5BEE8F00C449A4 /* FAQView.swift */; };
+		47C368E72D5D20A200C449A4 /* WorkoutTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C368E62D5D20A200C449A4 /* WorkoutTask.swift */; };
+		47C368ED2D5D2D5500C449A4 /* GoalPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C368EB2D5D2D5500C449A4 /* GoalPicker.swift */; };
+		47C368EF2D5D318700C449A4 /* WorkoutTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C368EE2D5D318700C449A4 /* WorkoutTaskCell.swift */; };
 		47CFFE752D5BD22A009582C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47CFFE692D5BD22A009582C7 /* Assets.xcassets */; };
 		47CFFE772D5BD22A009582C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CFFE6C2D5BD22A009582C7 /* LaunchScreen.storyboard */; };
 		47CFFE7A2D5BD333009582C7 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 47CFFE792D5BD333009582C7 /* swiftgen.yml */; };
@@ -48,9 +51,7 @@
 		47CFFF382D5BD3B3009582C7 /* SwiftUIViewWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CFFE9A2D5BD3B3009582C7 /* SwiftUIViewWebView.swift */; };
 		47CFFF3A2D5BD3B3009582C7 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CFFE7D2D5BD3B3009582C7 /* RootViewController.swift */; };
 		47CFFF3E2D5BD3B3009582C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CFFE7E2D5BD3B3009582C7 /* SceneDelegate.swift */; };
-		47CFFF3F2D5BD3B3009582C7 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CFFE9F2D5BD3B3009582C7 /* TransactionModel.swift */; };
 		47CFFF402D5BD3B3009582C7 /* UINavigationController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CFFE832D5BD3B3009582C7 /* UINavigationController+Additions.swift */; };
-		47CFFF412D5BD3B3009582C7 /* TransactionCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CFFE9E2D5BD3B3009582C7 /* TransactionCategory.swift */; };
 		47CFFF422D5BD3B3009582C7 /* LinearGradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CFFE922D5BD3B3009582C7 /* LinearGradientBackground.swift */; };
 		47CFFF432D5BD3B3009582C7 /* Double+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CFFE812D5BD3B3009582C7 /* Double+Additions.swift */; };
 		47CFFF442D5BD3B3009582C7 /* SFPRODISPLAYMEDIUM.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 47CFFEAB2D5BD3B3009582C7 /* SFPRODISPLAYMEDIUM.OTF */; };
@@ -75,6 +76,9 @@
 		47C368BE2D5BE13800C449A4 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		47C368C82D5BEB0100C449A4 /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
 		47C368D02D5BEE8F00C449A4 /* FAQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQView.swift; sourceTree = "<group>"; };
+		47C368E62D5D20A200C449A4 /* WorkoutTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTask.swift; sourceTree = "<group>"; };
+		47C368EB2D5D2D5500C449A4 /* GoalPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalPicker.swift; sourceTree = "<group>"; };
+		47C368EE2D5D318700C449A4 /* WorkoutTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTaskCell.swift; sourceTree = "<group>"; };
 		47CFFE4F2D5BD21D009582C7 /* BoFitvada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoFitvada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47CFFE692D5BD22A009582C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47CFFE6A2D5BD22A009582C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,8 +102,6 @@
 		47CFFE942D5BD3B3009582C7 /* MenuPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPicker.swift; sourceTree = "<group>"; };
 		47CFFE982D5BD3B3009582C7 /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
 		47CFFE9A2D5BD3B3009582C7 /* SwiftUIViewWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewWebView.swift; sourceTree = "<group>"; };
-		47CFFE9E2D5BD3B3009582C7 /* TransactionCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCategory.swift; sourceTree = "<group>"; };
-		47CFFE9F2D5BD3B3009582C7 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		47CFFEA02D5BD3B3009582C7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		47CFFEA22D5BD3B3009582C7 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		47CFFEA32D5BD3B3009582C7 /* Colors.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.generated.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		47C368AC2D5BDD9100C449A4 /* Workout  */ = {
 			isa = PBXGroup;
 			children = (
+				47C368EC2D5D2D5500C449A4 /* Views */,
 				47C368AA2D5BDD9100C449A4 /* WorkoutView.swift */,
 				47C368AB2D5BDD9100C449A4 /* WorkoutViewModel.swift */,
 			);
@@ -191,6 +194,15 @@
 				47C368D02D5BEE8F00C449A4 /* FAQView.swift */,
 			);
 			path = FAQ;
+			sourceTree = "<group>";
+		};
+		47C368EC2D5D2D5500C449A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47C368EB2D5D2D5500C449A4 /* GoalPicker.swift */,
+				47C368EE2D5D318700C449A4 /* WorkoutTaskCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		47CFFE462D5BD21D009582C7 = {
@@ -358,9 +370,8 @@
 		47CFFEA12D5BD3B3009582C7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				47CFFE9E2D5BD3B3009582C7 /* TransactionCategory.swift */,
-				47CFFE9F2D5BD3B3009582C7 /* TransactionModel.swift */,
 				47CFFEA02D5BD3B3009582C7 /* User.swift */,
+				47C368E62D5D20A200C449A4 /* WorkoutTask.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -450,8 +461,8 @@
 		47CFFEEE2D5BD3B3009582C7 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				47C368C02D5BE13800C449A4 /* SettingsFlow */,
 				47C368AC2D5BDD9100C449A4 /* Workout  */,
+				47C368C02D5BE13800C449A4 /* SettingsFlow */,
 				47CFFEED2D5BD3B3009582C7 /* TabBar */,
 			);
 			path = Main;
@@ -624,6 +635,7 @@
 				47CFFF022D5BD3B3009582C7 /* AppDelegate.swift in Sources */,
 				47CFFF082D5BD3B3009582C7 /* CustomTextField.swift in Sources */,
 				47CFFF092D5BD3B3009582C7 /* View+Additions.swift in Sources */,
+				47C368ED2D5D2D5500C449A4 /* GoalPicker.swift in Sources */,
 				47CFFF0B2D5BD3B3009582C7 /* NextButton.swift in Sources */,
 				47CFFF0C2D5BD3B3009582C7 /* OnboardingView.swift in Sources */,
 				47CFFF0D2D5BD3B3009582C7 /* RootContentViewModel.swift in Sources */,
@@ -645,7 +657,9 @@
 				47CFFF1A2D5BD3B3009582C7 /* Date+Additions.swift in Sources */,
 				47C368CA2D5BEB0100C449A4 /* SettingsButton.swift in Sources */,
 				47CFFF1C2D5BD3B3009582C7 /* ShareSheet.swift in Sources */,
+				47C368EF2D5D318700C449A4 /* WorkoutTaskCell.swift in Sources */,
 				47CFFF1D2D5BD3B3009582C7 /* DatePickerView.swift in Sources */,
+				47C368E72D5D20A200C449A4 /* WorkoutTask.swift in Sources */,
 				47CFFF1F2D5BD3B3009582C7 /* OnboardingViewTabView.swift in Sources */,
 				47CFFF212D5BD3B3009582C7 /* OnboardingViewModel.swift in Sources */,
 				47CFFF232D5BD3B3009582C7 /* Images.generated.swift in Sources */,
@@ -658,9 +672,7 @@
 				47CFFF382D5BD3B3009582C7 /* SwiftUIViewWebView.swift in Sources */,
 				47CFFF3A2D5BD3B3009582C7 /* RootViewController.swift in Sources */,
 				47CFFF3E2D5BD3B3009582C7 /* SceneDelegate.swift in Sources */,
-				47CFFF3F2D5BD3B3009582C7 /* TransactionModel.swift in Sources */,
 				47CFFF402D5BD3B3009582C7 /* UINavigationController+Additions.swift in Sources */,
-				47CFFF412D5BD3B3009582C7 /* TransactionCategory.swift in Sources */,
 				47CFFF422D5BD3B3009582C7 /* LinearGradientBackground.swift in Sources */,
 				47CFFF432D5BD3B3009582C7 /* Double+Additions.swift in Sources */,
 			);
