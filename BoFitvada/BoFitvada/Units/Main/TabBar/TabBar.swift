@@ -21,7 +21,7 @@ struct TabBar: View {
                     .tag(TabBarSelectionView.workout.rawValue)
                     .environmentObject(viewModel)
                 
-                Text("challenge")
+                ChallengeView()
                     .tag(TabBarSelectionView.challenge.rawValue)
                     .environmentObject(viewModel)
                 

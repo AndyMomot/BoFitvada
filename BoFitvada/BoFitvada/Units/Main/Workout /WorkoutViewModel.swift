@@ -23,7 +23,9 @@ extension WorkoutView {
 
 extension WorkoutView.ViewModel {
     func getCompletedWorkoutTasks() async {
-        let allUncompletedTasks = WorkoutTask.allTasks.filter {
+        let staticWorkoutTasks = WorkoutTask.allTasks
+        let customWorkoutTasks = DefaultsService.shared.customWorkoutTasks
+        let allTasks = (staticWorkoutTasks + customWorkoutTasks).filter {
             $0.type == workoutType
         }.sorted(by: { $0.score < $1.score })
         
@@ -31,7 +33,7 @@ extension WorkoutView.ViewModel {
             $0.type == workoutType
         }.sorted(by: { $0.score < $1.score })
         
-        let uncompletedTasks = allUncompletedTasks.filter { task in
+        let uncompletedTasks = allTasks.filter { task in
             !completedTasks.contains(where: { $0.id == task.id })
         }
         
@@ -39,6 +41,17 @@ extension WorkoutView.ViewModel {
             self?.completedWorkoutTasks = completedTasks
             self?.uncompletedWorkoutTasks = uncompletedTasks
         }
+    }
+    
+    func handleCell(action: WorkoutTaskCell.ViewAction) async {
+        switch action {
+        case .update(let item):
+            await updateCompletionStatus(for: item)
+        case .delete(let id):
+            await deleteCustomWorkoutTask(id: id)
+        }
+        
+        await getCompletedWorkoutTasks()
     }
     
     func updateCompletionStatus(for task: WorkoutTask) async {
@@ -50,7 +63,10 @@ extension WorkoutView.ViewModel {
             newTask.isFinished.toggle()
             DefaultsService.shared.completedWorkoutTasks.append(newTask)
         }
-        
-        await getCompletedWorkoutTasks()
+    }
+    
+    func deleteCustomWorkoutTask(id: String) async {
+        DefaultsService.shared.customWorkoutTasks.removeAll(where: { $0.id == id })
+        DefaultsService.shared.completedWorkoutTasks.removeAll(where: { $0.id == id })
     }
 }

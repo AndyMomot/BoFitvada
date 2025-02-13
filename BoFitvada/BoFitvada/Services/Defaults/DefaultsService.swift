@@ -60,6 +60,21 @@ extension DefaultsService {
             }
         }
     }
+    
+    var customWorkoutTasks: [WorkoutTask] {
+        get {
+            if let data = standard.data(forKey: Keys.customWorkoutTasks.rawValue),
+               let items = try? JSONDecoder().decode([WorkoutTask].self, from: data) {
+                return items
+            }
+            return []
+        }
+        set {
+            if let data = try? JSONEncoder().encode(newValue) {
+                standard.set(data, forKey: Keys.customWorkoutTasks.rawValue)
+            }
+        }
+    }
 }
 
 // MARK: - Keys
@@ -68,5 +83,6 @@ extension DefaultsService {
         case flow
         case user
         case completedWorkoutTasks
+        case customWorkoutTasks
     }
 }

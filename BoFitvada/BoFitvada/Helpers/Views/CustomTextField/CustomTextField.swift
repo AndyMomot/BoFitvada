@@ -6,6 +6,7 @@ struct CustomTextField: View {
     var isDynamic = false
     var showPencil = false
     @Binding var text: String
+    var keyboardType: UIKeyboardType = .default
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -23,7 +24,7 @@ struct CustomTextField: View {
                         .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 24))
                         .padding(.horizontal, 12)
                         .padding(.vertical, 28)
-                    
+                        .keyboardType(keyboardType)
                     
                     if text.isEmpty {
                         createPlaceholder(text: placeholder,
@@ -32,7 +33,6 @@ struct CustomTextField: View {
                 }
                 .background(.black.opacity(0.5))
                 .clipShape(RoundedRectangle(cornerRadius: 25))
-                .shadowModifier()
                 
             } else {
                 HStack {
@@ -41,6 +41,7 @@ struct CustomTextField: View {
                                           isDynamic: isDynamic)
                     }
                     .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 24))
+                    .keyboardType(keyboardType)
                     
                     if showPencil {
                         Image(systemName: "pencil")
@@ -51,7 +52,6 @@ struct CustomTextField: View {
                 .padding(.vertical, 10)
                 .background(.black.opacity(0.5))
                 .clipShape(RoundedRectangle(cornerRadius: 25))
-                .shadowModifier()
             }
         }
         .hideKeyboardWhenTappedAround()
