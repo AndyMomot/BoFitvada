@@ -37,7 +37,7 @@ struct ChallengeView: View {
                                 .foregroundStyle(.white)
                                 .font(Fonts.SFProDisplay.bold.swiftUIFont(size: 16))
                             
-                            CustomTextField(placeholder: "Enter text",
+                            CustomTextField(placeholder: "Enter text (optional)",
                                             isDynamic: true,
                                             showPencil: true,
                                             text: $viewModel.description)

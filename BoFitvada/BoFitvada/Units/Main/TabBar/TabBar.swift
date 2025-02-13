@@ -29,7 +29,7 @@ struct TabBar: View {
                     .tag(TabBarSelectionView.advice.rawValue)
                     .environmentObject(viewModel)
                 
-                Text("stats")
+                StatisticsView()
                     .tag(TabBarSelectionView.stats.rawValue)
                 
                 SettingsView()

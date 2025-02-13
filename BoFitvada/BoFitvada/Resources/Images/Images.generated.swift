@@ -29,6 +29,7 @@ internal enum Asset {
   internal static let dumbbellWorkouts2 = ImageAsset(name: "dumbbellWorkouts2")
   internal static let exerciseBikeWorkout = ImageAsset(name: "exerciseBikeWorkout")
   internal static let exerciseBikeWorkout2 = ImageAsset(name: "exerciseBikeWorkout2")
+  internal static let star = ImageAsset(name: "star")
   internal static let workoutOnGYM = ImageAsset(name: "workoutOnGYM")
   internal static let workoutOnGYM2 = ImageAsset(name: "workoutOnGYM2")
   internal static let onboard1 = ImageAsset(name: "onboard1")

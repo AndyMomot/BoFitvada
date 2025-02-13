@@ -27,9 +27,7 @@ enum WorkoutType: String, Codable, CaseIterable {
 }
 
 extension WorkoutTask {
-    static let allTasks: [WorkoutTask] = powerTasks + enduranceTasks + flexibilityTasks + speedTasks
-    static let maxScore = allTasks.map { $0.score }.reduce(0) { $0 + $1 }
-    static let currentScore = DefaultsService.shared.completedWorkoutTasks.map { $0.score }.reduce(0) { $0 + $1 }
+    static let allStaticTasks: [WorkoutTask] = powerTasks + enduranceTasks + flexibilityTasks + speedTasks
     
     static var powerTasks: [WorkoutTask] {
         [

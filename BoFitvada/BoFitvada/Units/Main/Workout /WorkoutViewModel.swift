@@ -23,7 +23,7 @@ extension WorkoutView {
 
 extension WorkoutView.ViewModel {
     func getCompletedWorkoutTasks() async {
-        let staticWorkoutTasks = WorkoutTask.allTasks
+        let staticWorkoutTasks = WorkoutTask.allStaticTasks
         let customWorkoutTasks = DefaultsService.shared.customWorkoutTasks
         let allTasks = (staticWorkoutTasks + customWorkoutTasks).filter {
             $0.type == workoutType

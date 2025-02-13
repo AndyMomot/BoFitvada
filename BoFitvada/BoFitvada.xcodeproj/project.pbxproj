@@ -14,6 +14,10 @@
 		4787EC562D5DEB5400C6D8FA /* AdvicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787EC522D5DEB5400C6D8FA /* AdvicesViewModel.swift */; };
 		4787EC5C2D5DEEFE00C6D8FA /* AdviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787EC5A2D5DEEFE00C6D8FA /* AdviceCell.swift */; };
 		4787EC622D5DF0AD00C6D8FA /* AdviceDeteailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787EC602D5DF0AD00C6D8FA /* AdviceDeteailsView.swift */; };
+		4787EC6B2D5DF63F00C6D8FA /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787EC682D5DF63F00C6D8FA /* StatisticsView.swift */; };
+		4787EC6C2D5DF63F00C6D8FA /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787EC692D5DF63F00C6D8FA /* StatisticsViewModel.swift */; };
+		4787EC752D5DF75A00C6D8FA /* CustomCircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787EC732D5DF75A00C6D8FA /* CustomCircularProgressView.swift */; };
+		4787EC782D5DF8A600C6D8FA /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787EC762D5DF8A600C6D8FA /* CircularProgressBar.swift */; };
 		47C368AD2D5BDD9100C449A4 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C368AA2D5BDD9100C449A4 /* WorkoutView.swift */; };
 		47C368AE2D5BDD9100C449A4 /* WorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C368AB2D5BDD9100C449A4 /* WorkoutViewModel.swift */; };
 		47C368BC2D5BE13200C449A4 /* NavigationBarTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C368BA2D5BE13200C449A4 /* NavigationBarTitle.swift */; };
@@ -83,6 +87,10 @@
 		4787EC522D5DEB5400C6D8FA /* AdvicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvicesViewModel.swift; sourceTree = "<group>"; };
 		4787EC5A2D5DEEFE00C6D8FA /* AdviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceCell.swift; sourceTree = "<group>"; };
 		4787EC602D5DF0AD00C6D8FA /* AdviceDeteailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceDeteailsView.swift; sourceTree = "<group>"; };
+		4787EC682D5DF63F00C6D8FA /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		4787EC692D5DF63F00C6D8FA /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
+		4787EC732D5DF75A00C6D8FA /* CustomCircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircularProgressView.swift; sourceTree = "<group>"; };
+		4787EC762D5DF8A600C6D8FA /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
 		47C368AA2D5BDD9100C449A4 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 		47C368AB2D5BDD9100C449A4 /* WorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewModel.swift; sourceTree = "<group>"; };
 		47C368BA2D5BE13200C449A4 /* NavigationBarTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarTitle.swift; sourceTree = "<group>"; };
@@ -208,6 +216,32 @@
 				4787EC602D5DF0AD00C6D8FA /* AdviceDeteailsView.swift */,
 			);
 			path = AdviceDetails;
+			sourceTree = "<group>";
+		};
+		4787EC6A2D5DF63F00C6D8FA /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				4787EC742D5DF75A00C6D8FA /* Views */,
+				4787EC682D5DF63F00C6D8FA /* StatisticsView.swift */,
+				4787EC692D5DF63F00C6D8FA /* StatisticsViewModel.swift */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		4787EC742D5DF75A00C6D8FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4787EC732D5DF75A00C6D8FA /* CustomCircularProgressView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4787EC772D5DF8A600C6D8FA /* CircularProgress */ = {
+			isa = PBXGroup;
+			children = (
+				4787EC762D5DF8A600C6D8FA /* CircularProgressBar.swift */,
+			);
+			path = CircularProgress;
 			sourceTree = "<group>";
 		};
 		47C368AC2D5BDD9100C449A4 /* Workout  */ = {
@@ -411,6 +445,7 @@
 		47CFFE9C2D5BD3B3009582C7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4787EC772D5DF8A600C6D8FA /* CircularProgress */,
 				47C368BB2D5BE13200C449A4 /* NavigationBarTitle */,
 				47CFFE8B2D5BD3B3009582C7 /* BackButton */,
 				47CFFE8D2D5BD3B3009582C7 /* CustomProgressView */,
@@ -531,6 +566,7 @@
 				47C368AC2D5BDD9100C449A4 /* Workout  */,
 				4787EC422D5DDBC000C6D8FA /* Challenge */,
 				4787EC542D5DEB5400C6D8FA /* AdviceFlow */,
+				4787EC6A2D5DF63F00C6D8FA /* Statistics */,
 				47C368C02D5BE13800C449A4 /* SettingsFlow */,
 				47CFFEED2D5BD3B3009582C7 /* TabBar */,
 			);
@@ -717,6 +753,7 @@
 				47C368AD2D5BDD9100C449A4 /* WorkoutView.swift in Sources */,
 				47C368AE2D5BDD9100C449A4 /* WorkoutViewModel.swift in Sources */,
 				47CFFF102D5BD3B3009582C7 /* Colors.generated.swift in Sources */,
+				4787EC752D5DF75A00C6D8FA /* CustomCircularProgressView.swift in Sources */,
 				4787EC432D5DDBC000C6D8FA /* ChallengeView.swift in Sources */,
 				4787EC442D5DDBC000C6D8FA /* ChallengeViewModel.swift in Sources */,
 				47CFFF112D5BD3B3009582C7 /* RootContentView.swift in Sources */,
@@ -744,8 +781,11 @@
 				47CFFF312D5BD3B3009582C7 /* DefaultsService.swift in Sources */,
 				47CFFF322D5BD3B3009582C7 /* TabBar.swift in Sources */,
 				47CFFF342D5BD3B3009582C7 /* FileManager+Image.swift in Sources */,
+				4787EC6B2D5DF63F00C6D8FA /* StatisticsView.swift in Sources */,
+				4787EC6C2D5DF63F00C6D8FA /* StatisticsViewModel.swift in Sources */,
 				47CFFF362D5BD3B3009582C7 /* BackButton.swift in Sources */,
 				47CFFF382D5BD3B3009582C7 /* SwiftUIViewWebView.swift in Sources */,
+				4787EC782D5DF8A600C6D8FA /* CircularProgressBar.swift in Sources */,
 				47CFFF3A2D5BD3B3009582C7 /* RootViewController.swift in Sources */,
 				47CFFF3E2D5BD3B3009582C7 /* SceneDelegate.swift in Sources */,
 				47CFFF402D5BD3B3009582C7 /* UINavigationController+Additions.swift in Sources */,
