@@ -76,7 +76,10 @@ private extension WorkoutTaskCell {
                 Button {
                     action(.delete(id: item.id))
                 } label: {
-                    Image(systemName: "trash")
+                    Image(systemName: "xmark.circle.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 20)
                         .foregroundStyle(.white)
                         .offset(x: 5, y: -5)
                 }

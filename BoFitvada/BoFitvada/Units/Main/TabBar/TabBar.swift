@@ -25,7 +25,7 @@ struct TabBar: View {
                     .tag(TabBarSelectionView.challenge.rawValue)
                     .environmentObject(viewModel)
                 
-                Text("advice")
+                AdvicesView()
                     .tag(TabBarSelectionView.advice.rawValue)
                     .environmentObject(viewModel)
                 
